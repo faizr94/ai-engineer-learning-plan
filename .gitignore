@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+.env.*
+*.key
+
+# Model / data artifacts
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.safetensors
+data/
+models/
+*.csv
+*.parquet
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Caching
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
