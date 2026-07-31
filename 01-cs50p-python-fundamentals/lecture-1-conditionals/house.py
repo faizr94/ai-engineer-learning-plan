@@ -4,7 +4,7 @@ match name:
     case "Harry" | "Hermione" | "Ron":
         print("Gryffindor")
     case "Draco":
-        print("Slytheric")
+        print("Slytherin")
     # use for catch-all
     case _:
         print("Who?")
