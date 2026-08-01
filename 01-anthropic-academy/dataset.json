@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Extract AWS service names from CloudFormation template resource types (e.g., 'AWS::S3::Bucket', 'AWS::Lambda::Function')",
+    "format": "regex",
+    "solution_criteria": "Regex pattern should correctly extract the service name (second component) from AWS CloudFormation resource type strings, handling various AWS services"
+  },
+  {
+    "task": "Parse an AWS S3 bucket access log line and extract the bucket owner, bucket name, request time, source IP, and HTTP status code",
+    "format": "python",
+    "solution_criteria": "Function should parse a space-delimited S3 access log line and return a dictionary with keys: bucket_owner, bucket_name, request_time, source_ip, http_status_code"
+  },
+  {
+    "task": "Create a JSON policy document for an AWS IAM role that allows EC2 instances to read objects from a specific S3 bucket",
+    "format": "json",
+    "solution_criteria": "Valid JSON policy document with correct structure, AssumeRolePolicyDocument format, allowing s3:GetObject action on specified bucket resources"
+  }
+]
