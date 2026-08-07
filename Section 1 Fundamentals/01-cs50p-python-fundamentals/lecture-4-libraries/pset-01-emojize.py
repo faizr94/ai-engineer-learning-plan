@@ -7,3 +7,19 @@ See carpedm20.github.io/emoji/all.html?enableList=enable_list_alias for a list o
 In a file called emojize.py, implement a program that prompts the user for a str in English and then outputs the “emojized” version of that str, 
 converting any codes (or aliases) therein to their corresponding emoji.
 """
+import emoji
+
+def main():
+    user_str = input("Input: ")
+    print (emoji.emojize(user_str, language='alias'))
+    
+    
+    
+# def conv_emoji(user_str):
+#     # x = ":thumbsup:"
+#     # y = ":thumbs_up:"
+#     reemoji.emojize(user_str, language='alias'))
+#     ...
+    
+# conv_emoji('boo')
+main()
