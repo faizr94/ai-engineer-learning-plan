@@ -1,0 +1,50 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "Marathon training with high carbohydrate intake and proper meal timing around a 90-minute morning run",
+      "restrictions": "Vegetarian, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan covers all 3 meals plus pre/post-workout nutrition around the 90-minute run",
+      "Total daily carbohydrates align with endurance athlete needs (8-10g per kg body weight)",
+      "All meals and snacks are vegetarian and nut-free",
+      "Meal plan is presented in compact, single-day format with clear timing"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-performance endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing around training sessions"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "85 kg",
+      "goal": "Build muscle and strength through weightlifting with optimized pre/post-workout nutrition",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers 1 full day with at least 4 meals/snacks strategically timed around workout",
+      "Protein intake meets or exceeds 1.6-2.2g per kg body weight (136-187g total)",
+      "Pre-workout meal consumed 2-3 hours before training; post-workout meal within 1-2 hours after",
+      "Plan is compact and concise (under 400 words)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) with elevated protein requirements and strategic meal timing around workout windows"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "72 kg",
+      "goal": "Build muscle and improve endurance for competitive cycling",
+      "restrictions": "Vegan (no animal products)"
+    },
+    "solution_criteria": [
+      "Meal plan covers all three meals and includes snacks totaling approximately 2,800-3,200 calories",
+      "Each meal contains plant-based protein sources (legumes, tofu, nuts, seeds) meeting ~1.6-1.8g protein per kg bodyweight",
+      "Includes micronutrient-rich foods addressing common vegan athlete gaps (iron, B12, calcium, omega-3s)",
+      "Meals are practical, concise, and suitable for a single day without excessive preparation time"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with an athlete with dietary restrictions (vegan/vegetarian) requiring creative protein and micronutrient sourcing while maintaining performance nutrition principles"
+  }
+]

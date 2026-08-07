@@ -1,0 +1,39 @@
+[
+  {
+    "prompt_inputs": {
+      "content": "The Renaissance humanist movement fundamentally challenged medieval scholasticism by reviving classical texts and emphasizing individual agency, yet this intellectual revolution occurred within the context of early capitalist merchant economies in Italian city-states where banking families like the Medici leveraged their wealth to patronize artists and philosophers. This convergence of cultural, economic, and philosophical forces created a unique historical moment where aesthetic innovation, proto-capitalist accumulation, and epistemological transformation became inseparable\u2014the very architecture commissioned by wealthy patrons embodied both humanist ideals of proportion and mathematical harmony derived from ancient sources, while simultaneously serving as conspicuous displays of economic power that reinforced emerging social hierarchies based on mercantile success rather than feudal lineage."
+    },
+    "solution_criteria": [
+      "Extracts topics spanning multiple disciplines (humanities, philosophy, economics, history, art/architecture)",
+      "Identifies both explicit topics and implicit interdisciplinary connections present in the passage",
+      "Returns results as a valid JSON array of strings with no duplicates"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a humanities passage containing overlapping and interdisciplinary topics (e.g., a history article discussing philosophy, economics, and cultural movements simultaneously) to evaluate handling of multi-domain subjects"
+  },
+  {
+    "prompt_inputs": {
+      "content": "This study investigates the photocatalytic degradation of persistent organic pollutants using titanium dioxide (TiO2) nanoparticles synthesized via sol-gel methods. The synthesized nanoparticles exhibited a mean crystallite size of 12 nm with predominant anatase phase composition, as confirmed by X-ray diffraction (XRD) and transmission electron microscopy (TEM). Under UV-A irradiation at 365 nm, the TiO2 catalysts demonstrated enhanced degradation efficiency of bisphenol A (BPA) through hydroxyl radical (\u2022OH) generation, achieving 87% mineralization within 120 minutes. The mechanism involved electron-hole pair separation at the semiconductor-solution interface, with kinetic analysis revealing pseudo-first-order reaction kinetics (k = 0.0234 min\u207b\u00b9). Comparative analysis with commercial Degussa P25 showed a 23% improvement in photocatalytic activity, attributed to increased surface area and reduced band gap energy (Eg = 2.98 eV) due to iron doping."
+    },
+    "solution_criteria": [
+      "Extracts both specialized technical topics (e.g., specific compounds, analytical techniques, mechanisms) and general scientific concepts (e.g., photocatalysis, degradation)",
+      "Distinguishes between methodological approaches (sol-gel synthesis, XRD, TEM) and chemical/physical phenomena (electron-hole separation, hydroxyl radical generation)",
+      "Includes domain-specific jargon and chemical nomenclature as distinct topics where appropriate"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a highly technical scientific passage containing domain-specific jargon, chemical compounds, and methodology descriptions to assess extraction of specialized technical topics versus general concepts"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Recent advances in neuroplasticity research have challenged traditional assumptions about brain rigidity in adulthood. Studies employing functional magnetic resonance imaging demonstrate that repeated practice of motor skills activates compensatory neural pathways, suggesting the brain's remarkable capacity for reorganization. Furthermore, investigations into cognitive rehabilitation following stroke reveal that intensive therapy protocols can facilitate recovery of language function, implying underlying mechanisms of neural adaptation. These findings carry significant implications for educational pedagogy, as they suggest that learning potential extends throughout the lifespan. The role of neurotransmitter systems in mediating these adaptive processes remains incompletely understood, though evidence points toward dopamine's involvement in reinforcement-based learning and synaptic remodeling."
+    },
+    "solution_criteria": [
+      "Extracts explicit topics directly mentioned (neuroplasticity, brain imaging, motor skills, cognitive rehabilitation, stroke recovery, language function, education)",
+      "Identifies implicit topics inferable from context (neural adaptation, brain plasticity mechanisms, learning mechanisms, neurotransmitter systems)",
+      "Returns results as a valid JSON array of strings",
+      "Avoids including non-topical content such as methodology descriptions or qualifiers"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a passage containing implicit and explicit topics, where some topics require inference from context rather than direct mention, to evaluate whether the extraction identifies both obvious and subtle subject matter"
+  }
+]
